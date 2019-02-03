@@ -7,4 +7,4 @@ Front-end of the sickfits project, within this folder lives the client code runn
 1) cd into project folder.
 2) run `npm install` to install all node modules.
 3) to run in dev run the npm command `npm run dev`.
-4) project should be running on localhost:8080.
+4) project should be running on localhost:7777.
