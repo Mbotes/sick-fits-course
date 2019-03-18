@@ -1,19 +1,12 @@
-import React from 'react';
-import Link from 'next/link';
+
+import Items from '../components/Items';
 
 
-class Home extends React.Component {
-    render() {
-        return  (
-            <div>
-                <p> Home!</p>
-
-                <Link href="/sell">
-                    <a>sell</a>
-                </Link>
-            </div>
-        )
-    }
-}
+const Home  = props => (
+    <div>
+        <Items/>
+    </div>
+    
+)
 
 export default Home;
