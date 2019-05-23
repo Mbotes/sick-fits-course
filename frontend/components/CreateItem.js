@@ -51,7 +51,7 @@ class CreateItem extends Component {
                     //redirect them to single item page
                     console.log(res);
                     Router.push({
-                        pathname: '/item',
+                        pathname: '/items',
                         query: {id: res.data.createItem.id}
                     })
                 }}>
