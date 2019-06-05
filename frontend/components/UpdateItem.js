@@ -72,7 +72,15 @@ class UpdateItem extends Component {
 
         <Mutation mutation={UPDATE_ITEM_MUTATION} variables={this.state}>
           {(updateItem, { loading, error }) => (
-            <Form onSubmit={e => this.updateItem(e, updateItem)}>
+            <Form onSubmit={e => {
+              e.preventDefault();
+              this.updateItem(e, updateItem);
+              if (!loading){
+                Router.push({
+                  pathname:'/items'
+                })
+              }
+            }}>
               <Error error={error} />
               <fieldset disabled={loading} aria-busy={loading}>
                 <label htmlFor="title">

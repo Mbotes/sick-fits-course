@@ -27,13 +27,7 @@ const CREATE_ITEM_MUTATION = gql`
 `;
 
 class CreateItem extends Component {
-  state = {
-    title: 'Cool Shoes',
-    description: 'I love those shoes',
-    image: 'dog.jpg',
-    largeImage: 'large-dog.jpg',
-    price: 1000,
-  };
+  state = {};
   handleChange = e => {
     const { name, type, value } = e.target;
     const val = type === 'number' ? parseFloat(value) : value;
